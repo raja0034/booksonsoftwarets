@@ -1,0 +1,19 @@
+--2018-05-04 06:51:17--  https://ravirajamanirgdiag465.blob.core.windows.net/bootdiagnostics-ravirajam-d3bf96f0-6413-4ab3-9d35-83b928f50448/jquery-ui-1.12.1.custom.zip
+Resolving ravirajamanirgdiag465.blob.core.windows.net (ravirajamanirgdiag465.blob.core.windows.net)... 13.77.184.64
+Connecting to ravirajamanirgdiag465.blob.core.windows.net (ravirajamanirgdiag465.blob.core.windows.net)|13.77.184.64|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 437739 (427K) [application/x-zip-compressed]
+Saving to: ‘jquery-ui-1.12.1.custom.zip.1’
+
+     0K .......... .......... .......... .......... .......... 11% 64.5M 0s
+    50K .......... .......... .......... .......... .......... 23% 44.7M 0s
+   100K .......... .......... .......... .......... .......... 35%  108M 0s
+   150K .......... .......... .......... .......... .......... 46%  108M 0s
+   200K .......... .......... .......... .......... .......... 58%  135M 0s
+   250K .......... .......... .......... .......... .......... 70%  158M 0s
+   300K .......... .......... .......... .......... .......... 81%  362M 0s
+   350K .......... .......... .......... .......... .......... 93% 79.2M 0s
+   400K .......... .......... .......                         100%  358M=0.004s
+
+2018-05-04 06:51:17 (98.2 MB/s) - ‘jquery-ui-1.12.1.custom.zip.1’ saved [437739/437739]
+
