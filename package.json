@@ -1,0 +1,19 @@
+{
+  "name": "booksonsoftware",
+  "version": "1.0.0",
+  "description": "This is the source code for the web application https://booksonsoftware.com/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raja0034/booksonsoftwarets.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raja0034/booksonsoftwarets/issues"
+  },
+  "homepage": "https://github.com/raja0034/booksonsoftwarets#readme"
+}

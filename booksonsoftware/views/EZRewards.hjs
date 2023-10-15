@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <title>{{title}}</title>
+    <link rel="stylesheet" type="text/css" href="//blueimp.github.io/jQuery-File-Upload/css/jquery.fileupload.css">
+    <link rel="stylesheet" type="text/css" href="//blueimp.github.io/jQuery-File-Upload/css/jquery.fileupload-ui.css">
+    <link rel="stylesheet" type="text/css" href="/styles/style.css" />
+</head>
+<body>
+<div id="contain">
+
+    <div id="main" role="main">
+
+        <div class="article">
+	<table border="0" width="auto" height="auto">
+	<tr>
+	<td>
+	<img src="https://5qppiw.sn.files.1drv.com/y4mBoHbBP8RYSwrcWx82QHMXdq12CyxWO8TinRXQuk8DpfC4hmokLbDVVH_6SABISXDHY9xgc8O3q_jhXDJMSXUW0CbxRF_zpmiTVMQDvruk5uekmcrOwFr9s3xPV7LqyrZmp24im-tqkVg2a4t6-b6lfGuzA6_j8zNcd_L3y34CysxLePMBBJgz0Bxg54IOGWLi0hO6JV5JAnhlqnMgTNxHw/Page1.jpg?psid=1" align="center" width="auto" height="auto" />
+	</td>
+	</tr>
+	<tr>
+	<td>
+	<a href="https://1drv.ms/w/s!Ashlm-Nw-wnWxREAhXD5tARooErI?e=SMVhrk"><img src="https://3a9eaa.sn.files.1drv.com/y4pN3h2uFaS-6mEZKFO57OBlMhsJcArJDucIm9Zqd8yijRhRpWY4m5D8x2-ACSNj1n_fmmFHnEd50n-RgwuPZQBi162J1uv1MzPFjMqXKhewsmc87DF6JEhwAPV9Xmi8tGqDh_QPrFFrhHGanwyHnCnNGb8AmNxBfe2lVrtTzrNhKKsZr-XzQY_NmZq7ggd-0QRoiykPBObEcyTvKu_Bpe5Qw/Page2.jpg?psid=1" align="center" width="auto" height="auto" /></a>
+	</td>
+	</tr>
+        </div>
+
+    </div>
+
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="//blueimp.github.io/jQuery-File-Upload/js/vendor/jquery.ui.widget.js"></script>
+<script src="//blueimp.github.io/JavaScript-Load-Image/js/load-image.min.js"></script>
+<script src="//blueimp.github.io/JavaScript-Canvas-to-Blob/js/canvas-to-blob.min.js"></script>
+<script type="text/javascript" src="/scripts/file_upload.js"></script>
+</body>
+</html>
