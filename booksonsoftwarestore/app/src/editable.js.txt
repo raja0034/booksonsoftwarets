@@ -1,0 +1,88 @@
+'use strict';
+
+import React, {
+  useMemo,
+  useEffect,
+  useState,
+  useRef,
+  memo,
+  useCallback
+} from 'react';
+import { render } from 'react-dom';
+import { AgGridReact } from 'ag-grid-react';
+import 'ag-grid-community/dist/styles/ag-grid.css';
+import 'ag-grid-community/dist/styles/ag-theme-alpine.css';
+
+const RenderCounterCellRenderer = memo(params => {
+  const renderCountRef = useRef(1);
+  return (
+    <span className="my-renderer">
+      {params.value}
+    </span>
+  );
+});
+
+function GridExample() {
+  const [suppressReactUi, setSuppressReactUi] = useState(false);
+
+  const gridRef = useRef();
+
+  const columnDefs = useMemo(
+    () => [
+      { field: 'id', cellRenderer: RenderCounterCellRenderer },
+      { field: 'title', cellRenderer: RenderCounterCellRenderer },
+      { field: 'thumbnail', cellRenderer: RenderCounterCellRenderer },
+      { field: 'sample', cellRenderer: RenderCounterCellRenderer },
+    ],
+    []
+  );
+
+  // never changes, so we can use useMemo
+  const defaultColDef = useMemo(
+    () => ({
+      resizable: true,
+      sortable: true,
+      flex: 1
+    }),
+    []
+  );
+
+  // because row data changes, it needs to be state
+  const [rowData, setRowData] = useState();
+
+  // gets called once, no dependencies, loads the grid data
+  useEffect(() => {
+    fetch('https://www.booksonsoftware.com/books.json')
+      .then(resp => resp.json())
+      .then(data => setRowData(data.slice(0, 10)));
+  }, []);
+
+  const disableReactUI = useCallback(() => {
+    setSuppressReactUi(true);
+  });
+
+  const enableReactUI = useCallback(() => {
+    setSuppressReactUi(false);
+  });
+
+  return (
+    <div className={'parent-div'}>
+      <div className="grid-div">
+        <AgGridReact
+          // turn on AG Grid React UI
+          suppressReactUi={suppressReactUi}
+          // used to access grid API
+          ref={gridRef}
+          // all other properties as normal...
+          className="ag-theme-alpine"
+          animateRows="true"
+          columnDefs={columnDefs}
+          defaultColDef={defaultColDef}
+          rowData={rowData}
+        />
+      </div>
+    </div>
+  );
+}
+
+render(<GridExample />, document.querySelector('#root'));
