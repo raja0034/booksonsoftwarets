@@ -1,0 +1,45 @@
+{
+  "books": [
+    {
+      "id": 84473,
+      "title": "Ideas from Computer Science"
+      "thumbnail": "/images/Book1Gen.jpg",
+      "sample": "https://tinyurl.com/2sb9sxsd",
+      "favorite": true
+    },
+    {
+      "id": 84375,
+      "title": "Storage Engineering Best Practices",
+      "thumbnail": "/images/Book2Gen.jpg",
+      "sample": "https://1drv.ms/w/s!Ashlm-Nw-wnWuAROp4QX-yFswjGc?e=ZjqTTK",
+      "favorite": false
+    },
+    {
+      "id": 80310,
+      "title": "Data Mining Comparisions",
+      "thumbnail": "/images/Book3Gen.jpg",
+      "sample": "https://1drv.ms/w/s!Ashlm-Nw-wnWxBFlhCtfFkoVDRDa?e=1LOvd6",
+      "favorite": false
+    },
+    {
+      "id": 79874,
+      "title": "Puzzles",
+      "thumbnail": "/images/Book4Gen.jpg",
+      "sample": "https://1drv.ms/w/s!Ashlm-Nw-wnWkTwVGHib9e_Qr-H4",
+      "favorite": false
+    },
+    {
+      "id": 85595,
+      "title": "Essays in Application Modernization",
+      "thumbnail": "/images/Book5Gen.jpg",
+      "sample": "https://1drv.ms/w/s!Ashlm-Nw-wnWhMMQ1jDEwSF-4ALIOw?e=pY54hk",
+      "favorite": false
+    },
+    {
+      "id": 87777,
+      "title": "Field Guide for Application Migration",
+      "thumbnail": "/images/Book6Gen.jpg",
+      "sample": "https://1drv.ms/w/s!Ashlm-Nw-wnWhMUuuctZF8aa4NVj0w?",
+      "favorite": false
+    }
+]
