@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "email": "admin@booksonsoftware.com",
+      "hash": "$2a$10$7bLV5PLjd4CDjQJqmkgDEuLlzXNsprI561a0Btk.h9YeKfsvqiahq",
+      "role": "ADMIN",
+      "id": "c22e95c6-e111-4655-b54a-8b12392e312e"
+    },
+    {
+      "email": "ravi@awsonelogin.info",
+      "hash": "$2a$10$IgPhLRK/HoS/KZDxluzWzOQlyGC1.4TEF42b5IaGMUfyApYZHooBe",
+      "role": "USER",
+      "id": "c67ae1f1-4173-4538-9065-96f98f99a1ec"
+    }
+  ]
+}
