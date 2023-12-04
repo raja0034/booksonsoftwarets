@@ -41,5 +41,12 @@
       "thumbnail": "/images/Book6Gen.jpg",
       "sample": "https://1drv.ms/w/s!Ashlm-Nw-wnWhMUuuctZF8aa4NVj0w?",
       "favorite": false
+    },
+    {
+      "id": 87778,
+      "title": "Essays on Infrastructure-as-code",
+      "thumbnail": "/images/Book7Gen.jpg",
+      "sample": "https://1drv.ms/b/s!Ashlm-Nw-wnWhNNa88QVrS6QupG9BQ?e=vHoXpT",
+      "favorite": false
     }
 ]
