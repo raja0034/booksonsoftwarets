@@ -189,3 +189,67 @@ app.get('/text/', function(req, res){
         res.send(h);
      });
 });
+
+app.post('/add/', function(req, res){
+           cluster = {};
+           cluster.text = req.body.text;
+  var email = (req.session.currentUser) ? req.session.currentUser.email : "";
+  if (!email)
+     email = 'rajamani@my.com';
+  //var post_data = JSON.stringify(cluster);
+  var post_data = 'ratio='+encodeURIComponent(req.body.ratio)+'&text='+encodeURIComponent(req.body.text);
+  try {
+  console.log('post_data='+post_data);
+  console.log('ratio='+req.body.ratio);
+  var options = {
+    host: '0.0.0.0',
+    port: 8888,
+    path: '/metric/v1/add',
+    method: 'POST',
+    headers: {
+    'Content-Type': 'application/x-www-form-urlencoded',
+    'Content-Length': post_data.length,
+      }
+  };
+  var httpreq = http.request(options, function (response) {
+        console.log('post_data='+post_data);
+      clustersJson = '';
+      response.on('data', function (chunk) {
+          console.log('Response: ' + chunk);
+          clustersJson += chunk;
+          console.log('response_received='+clustersJson);
+      });
+
+    response.on('end', function() {
+      summary = "No Summary";
+      clusters = { "summary": summary };
+      try{
+      clusters = JSON.parse(clustersJson);
+      summary = clusters["summary"];
+      console.log('summary='+summary);
+      if (!summary)
+          clusters["summary"] = "";
+      clustersJson = JSON.stringify(clusters);
+      }catch(e)
+      {
+          console.log(e);
+      }
+      res.setHeader('Content-Type', 'application/json');
+      console.log('sending_json='+clustersJson);
+      res.send(clustersJson);
+     });
+     response.on('error', function(e) {
+      console.log('API call failed: '+e);
+      post_data = '';
+     });
+  });
+  httpreq.on('error', function(e) {
+     console.log(e);
+  });
+  httpreq.write(post_data);
+  httpreq.end();
+  } catch (err) {
+    console.log(`Summarizer api not available.`);
+    return res.sendStatus(400);
+  }
+});
