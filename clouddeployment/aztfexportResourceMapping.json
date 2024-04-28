@@ -1,0 +1,42 @@
+{
+	"/subscriptions/<my-subscription-id>/resourceGroups/rg-openai2": {
+		"resource_id": "/subscriptions/<my-subscription-id>/resourceGroups/rg-openai2",
+		"resource_type": "azurerm_resource_group",
+		"resource_name": "res-0"
+	},
+	"/subscriptions/<my-subscription-id>/resourceGroups/rg-openai2/providers/Microsoft.CognitiveServices/accounts/oai-ravinote-3": {
+		"resource_id": "/subscriptions/<my-subscription-id>/resourceGroups/rg-openai2/providers/Microsoft.CognitiveServices/accounts/oai-ravinote-3",
+		"resource_type": "azurerm_cognitive_account",
+		"resource_name": "res-1"
+	},
+	"/subscriptions/<my-subscription-id>/resourceGroups/rg-openai2/providers/Microsoft.CognitiveServices/accounts/oai-ravinote-3/deployments/key-ravinote-3": {
+		"resource_id": "/subscriptions/<my-subscription-id>/resourceGroups/rg-openai2/providers/Microsoft.CognitiveServices/accounts/oai-ravinote-3/deployments/key-ravinote-3",
+		"resource_type": "azurerm_cognitive_deployment",
+		"resource_name": "res-2"
+	},
+	"/subscriptions/<my-subscription-id>/resourceGroups/rg-openai2/providers/Microsoft.CognitiveServices/accounts/oai-ravinote-3/deployments/vec-ravinote-3": {
+		"resource_id": "/subscriptions/<my-subscription-id>/resourceGroups/rg-openai2/providers/Microsoft.CognitiveServices/accounts/oai-ravinote-3/deployments/vec-ravinote-3",
+		"resource_type": "azurerm_cognitive_deployment",
+		"resource_name": "res-3"
+	},
+	"/subscriptions/<my-subscription-id>/resourceGroups/rg-openai2/providers/Microsoft.Search/searchServices/sea-ravinote-3": {
+		"resource_id": "/subscriptions/<my-subscription-id>/resourceGroups/rg-openai2/providers/Microsoft.Search/searchServices/sea-ravinote-3",
+		"resource_type": "azurerm_search_service",
+		"resource_name": "res-4"
+	},
+	"/subscriptions/<my-subscription-id>/resourceGroups/rg-openai2/providers/Microsoft.Web/serverFarms/asp-web-app-chat-1": {
+		"resource_id": "/subscriptions/<my-subscription-id>/resourceGroups/rg-openai2/providers/Microsoft.Web/serverfarms/asp-web-app-chat-1",
+		"resource_type": "azurerm_service_plan",
+		"resource_name": "res-5"
+	},
+	"/subscriptions/<my-subscription-id>/resourceGroups/rg-openai2/providers/Microsoft.Web/sites/web-app-chat-1": {
+		"resource_id": "/subscriptions/<my-subscription-id>/resourceGroups/rg-openai2/providers/Microsoft.Web/sites/web-app-chat-1",
+		"resource_type": "azurerm_linux_web_app",
+		"resource_name": "res-6"
+	},
+	"/subscriptions/<my-subscription-id>/resourceGroups/rg-openai2/providers/Microsoft.Web/sites/web-app-chat-1/hostNameBindings/web-app-chat-1.azurewebsites.net": {
+		"resource_id": "/subscriptions/<my-subscription-id>/resourceGroups/rg-openai2/providers/Microsoft.Web/sites/web-app-chat-1/hostNameBindings/web-app-chat-1.azurewebsites.net",
+		"resource_type": "azurerm_app_service_custom_hostname_binding",
+		"resource_name": "res-11"
+	}
+}
